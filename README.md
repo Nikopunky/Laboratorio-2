@@ -1,6 +1,6 @@
-# LABORATORIO 1
+# LABORATORIO 2
 
-Laboratorio 1 de fundamentos de circuitos (herramientas ,seguridad y càlculos de circuitos)
+Laboratorio 2 Analisis de Mallas
 
 Nombres: Nicolas Cando , Blass Collaguazo
 
