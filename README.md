@@ -47,23 +47,23 @@ Nombres: Nicolas Cando , Blass Collaguazo
 
 3. EXPLICACIÓN DEL PROCEDIMIENTO
 
-Circuito Resistivo Mixto (TINKERCAD)
+Circuito para el análisis de mallas.
 
-![](https://github.com/Bscollaguazo/LAB1_COLLAGUAZO_BLASS/blob/main/circuito.png)
+![](https://github.com/Nikopunky/Laboratorio-2/blob/main/Imagen1%20(2).png)
 
 Diagrama Esquematico
 
-![](https://github.com/Bscollaguazo/LAB1_COLLAGUAZO_BLASS/blob/main/diagrama.png)
+![](https://github.com/Nikopunky/Laboratorio-2/blob/main/Imagen2%20(2).png)
 
-Se procede a ultilizar el simulador tinkercad para realizar mediciones de voltaje e intensidad de corriente en el circuito electrico mixto 
-
-Medicion de voltaje:
-
-![](https://github.com/Bscollaguazo/LAB1_COLLAGUAZO_BLASS/blob/main/medicionv.png)
+Se procede a ultilizar el simulador tinkercad para realizar mediciones de intensidad de corriente en el circuito 
 
 Medicion de intensidad de corriente:
 
-![](https://github.com/Bscollaguazo/LAB1_COLLAGUAZO_BLASS/blob/main/medicioni%20(2).png)
+![](https://github.com/Nikopunky/Laboratorio-2/blob/main/Imagen4%20(2).png)
+
+![](https://github.com/Nikopunky/Laboratorio-2/blob/main/Imagen5%20(2).png)
+
+![](https://github.com/Nikopunky/Laboratorio-2/blob/main/Imagen6%20(2).png)
 
 Se procede a realizar el calculo analiticamente
 
