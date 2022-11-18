@@ -7,23 +7,16 @@ Nombres: Nicolas Cando , Blass Collaguazo
 1. OBJETIVOS
 2. 1.1 Objetivos Generales.
 
--Conocer las herramientas con las cuales vamos a realizar la practica.
-
--Conocer los diferentes circuitos
-
--Aprender leyes y teorias para analizar circuitos
-
--Lograr que el estudiante arme un circuito en un simulador virtual
+-Determinar mediante la ley de voltajes de Kirchhoff la corriente en un circuito eléctrico.
 
 1.1.2 Objetivos Especificos
 
--Conocer detalladamente el uso del multimetro sus diferetes funciones para medir el voltaje, la intensidad etc de un circuito electrico, ademas de eso el uso del soldador (cautin) , el uso del protoboad, el funcionamiento de las resitencias, el uso del estaño, y las demas herramientas.
+-Calcular el valor de la corriente del circuito mediante el análisis de mallas.
 
--Conocer que tenemos 3 circuitos basicos como son el circuitos en serie, eeparalelo y mixto.
+-Aplicar un sentido de corriente arbitrario (horario o antihorario) para todas las mallas.
 
--Aprender sobre la ley de kircchoff, la ley de ohm ya que son leyes que nos permiten realizar calculos en los diferentes circuitos electricos.
+-Comprender la importancia que tiene el análisis de mallas al analizar circuitos electrónicos para realizar cálculos de una manera más fácil y organizada.
 
--Saber conectar un circuito en protoboad, usando resistensias, fuentes de alimentasion y conectandolo de la manera que el docente nos indique, si es un circuito serie, paralelo o mixto.
 
 2. MARCO TEÓRICO
 
@@ -45,7 +38,11 @@ Nombres: Nicolas Cando , Blass Collaguazo
 
 2.1.9 LEY DE OHM.-La ley de Ohm se usa para determinar la relación entre tensión, corriente y resistencia en un circuito eléctricO, aqui tenemos una formula de la cual despejamos los demas componentes, la formula es V= I.R (Voltaje= Intensidad . Resistencia)
 
+![](https://github.com/Nikopunky/Laboratorio-2/blob/main/Sin-t-tulo.png)
+
 3. EXPLICACIÓN DEL PROCEDIMIENTO
+
+EXPERIMENTO SIMULADO
 
 Circuito para el análisis de mallas.
 
@@ -65,52 +62,67 @@ Medicion de intensidad de corriente:
 
 ![](https://github.com/Nikopunky/Laboratorio-2/blob/main/Imagen6%20(2).png)
 
-Se procede a realizar el calculo analiticamente
+Se anotaron los datos en la siguiente tabla:
 
-Para resolver este circuito mixto se procede a utlizar los conceptos de resistencias en serie y paralelo para asi poder encontrar los respectivos voltajes e intensidad  de corriente en las diferentes resistencias.
+![](https://github.com/Nikopunky/Laboratorio-2/blob/main/Imagen9%20(2).png)
 
-![](https://github.com/Bscollaguazo/LAB1_COLLAGUAZO_BLASS/blob/main/calculoanalitico.jpg)
+EXPERIMENTO ANALITICO
 
-Resolucion de circuito mixto:
+Se procede a realizar el calculo analiticamente con el metodo de mallas y las Leyes de Kirchhoff:
 
-Se observa que la resistencia 3 y 4 estan en serie por lo que sumamos las 2 resistencias:
+![](https://github.com/Nikopunky/Laboratorio-2/blob/main/Imagen%20de%20WhatsApp%202022-11-17%20a%20las%2021.27.43.jpg)
 
-![](https://github.com/Bscollaguazo/LAB1_COLLAGUAZO_BLASS/blob/main/resistencias.png)
+Resolucion del circuito con las Leyes de Kirchhoff:
 
-El resultado de esta resistencia queda en paralelo con la resistencia 2 :
+![](https://github.com/Nikopunky/Laboratorio-2/blob/main/Imagen%20de%20WhatsApp%202022-11-17%20a%20las%2021.38.32.jpg)
 
-![](https://github.com/Bscollaguazo/LAB1_COLLAGUAZO_BLASS/blob/main/resistenciap.png)
+Lo que nos resulta en un sistema de ecuaciones 5x5 esto sistema lo resolvemos con la regla de cramer
 
-Con esto todas las resistencias quedan en serie por lo que se sumas y nos da una resistencia equivalente:
+![](https://github.com/Nikopunky/Laboratorio-2/blob/main/Imagen%20de%20WhatsApp%202022-11-17%20a%20las%2021.41.16%20(2).jpg)
 
-![](https://github.com/Bscollaguazo/LAB1_COLLAGUAZO_BLASS/blob/main/resistenciae.png)
+![](https://github.com/Nikopunky/Laboratorio-2/blob/main/Imagen%20de%20WhatsApp%202022-11-17%20a%20las%2021.41.45%20(2).jpg)
 
-Para finalizar con la resistencia equivalente y usando la formula de Ohm obtenemos los valores de voltaje e intensidad de corriente de las diferentes resistencias 
+Los resultados lo anotamos en una tabla
 
-![](https://github.com/Bscollaguazo/LAB1_COLLAGUAZO_BLASS/blob/main/tabla01.jpg)
+![](https://github.com/Nikopunky/Laboratorio-2/blob/main/Imagen10%20(2).png)
+
+EXPERIMENTO EN LA VIDA REAL
+
+Se procedio hacer el circuito en la protoboard de fuente de alimentacion se uso el arduino que nos da 5 voltios y 3.3 voltios.
+
+![](https://github.com/Nikopunky/Laboratorio-2/blob/main/experimento.jpg)
+
+Con la ayuda del multimetro podemos medir la corriente en cada una de las resistencias:
+
+![](https://github.com/Nikopunky/Laboratorio-2/blob/main/medicionexpe.jpg)
+
+![](https://github.com/Nikopunky/Laboratorio-2/blob/main/valorexpe.jpg)
+
+Se anotaron los valores en una tabla:
+
+![](https://github.com/Nikopunky/Laboratorio-2/blob/main/Imagen11%20(2).png)
 
 4. RESPUESTA A INTERROGANTES Y CALCULO DEL ERROR
 
-Verifique si se cumple la Ley de Kirchhoff de Voltajes en cada trayectoria cerrada, considerando las elevaciones de voltaje con signo positivo y las caídas de voltaje con signo negativo.
+Los valores analíticos y simulados, cumplen con la ley de voltaje y corriente de Kirchhoff, de la misma forma ambos obtienen los mismos valores para las corrientes de las mallas.
 
+En cuanto a los valores experimentales existe una ligera diferencia entre los analíticos y simulados, incluso entre ambos circuitos del grupo, es puesto que para el circuito físico se utilizaron fuentes de voltaje de 6 V en lugar de 5 V, y de 9 V en lugar de 10 V, y también las baterías de cada circuito del grupo, también varían ligeramente en su valor, por ende existirá una diferencia de hasta una unidad con los valores previstos, esto se observa en las mediciones, sin embargo por regla de tres se puede observar como los resultados del circuito físico son casi iguales a los resultados analíticos y simulados.
 
-Calculo del error:
-
-
+Respecto al margen de error, es debido a los diferentes valores usados en el circuito físico, y también que siempre existirá una diferencia de milésimas por distintos aspectos, principalmente el redondeo de resultados.
 
 5. VIDEO
 
 6. CONCLUSIONES
 
-6.1 Puedo concluir con que la practica de laboratorio fue muy buena, estumo muy entendible y el profesor enseño paso a paso la forma de usar los materiales y el simulador, logramos cumplir los objetivos de la practica, se aprendio a perfeccion sobre los diferentes circuitos electricos.
+• Se utilizó un análisis y compresión adecuado del esquema del circuito eléctrico para su elaboración, por medio de los materiales adecuados respetando su trayectoria y polaridad con el fin de que cumpliera con lo solicitado
+
+• Se determinó que gracias al análisis de mallas se puede obtener los valores de las corrientes de mallas por medio de un sistema de ecuaciones, siendo útil este método para un circuito eléctrico complejo.
 
 7. BIBLIOGRAFÍA
 
-Las leyes de Kirchhoff (artículo). (s. f.). Khan Academy. https://es.khanacademy.org/science/physics/circuits-topic/circuits-resistance/a/ee-kirchhoffs-laws
-
-colaboradores de Wikipedia. (2022, 23 octubre). Gustav Kirchhoff. Wikipedia, la enciclopedia libre. https://es.wikipedia.org/wiki/Gustav_Kirchhoff
-
-colaboradores de Wikipedia. (2022b, octubre 27). Multímetro. Wikipedia, la enciclopedia libre. https://es.wikipedia.org/wiki/Mult%C3%ADmetro
+Floyd, T. (2007). Principios de circuitos eléctricos. Octava edición. México: PEARSON EDUCACIÓN.
+McAllister, W. (2022). Khan Academy. Obtenido de https://es.khanacademy.org/science/electrical-engineering/ee-circuit-analysis-topic/ee-dc-circuit-analysis/a/ee-mesh-current-method
+Zapata, F. (1 de Noviembre de 2019). Lifeder. Obtenido de https://www.lifeder.com/analisis-de-mallas/ 
 
 RUBRICA
 
